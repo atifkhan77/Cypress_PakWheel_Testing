@@ -5,6 +5,13 @@ describe("Categories Test cases", ()=>{
       cy.contains("Category").should("be.visible");
   
       
+    });
+    it.only('signing up',()=>{
+      cy.get('.mini-nav > .list-unstyled > :nth-child(2) > a').click()
+      cy.get('#user_email').click().type('123@gmail.com')
+      cy.get('#user_display_name').click()
+
+
     })
   })
   
